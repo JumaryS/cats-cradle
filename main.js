@@ -93,6 +93,7 @@ function firstIndex(str){
     while(i <str.length){
         if (str[i] === "u"){
             console.log(i)
+            return
         }
         i=i+1
     }
