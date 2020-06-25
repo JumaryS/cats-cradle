@@ -74,12 +74,29 @@ firstFourChars("Oh hi, I didn't see you there. Welcome.", 4 )
 firstFourChars("Oh hi, I didn't see you there. Welcome.", 36)
 
 
-function printsFirstIndex(str){
-    let i = 0
-    while(i<str.length){
-        if (str.length === str[0])
-        console.log(str[i])
-    }i++
+function getFirstIndex(str){
+    let i=0
+    while(i <str.length){
+        if (str[i] === "u"){
+            console.log(i)
+        }
+        i=i+1
+    }
+}
+getFirstIndex("you picked the wrong house, bud")
+callChallengeBanner(5)
+
+
+
+function firstIndex(str){
+    let i=0
+    while(i <str.length){
+        if (str[i] === "u"){
+            console.log(i)
+        }
+        i=i+1
+    }
 }
 
-printsFirstIndex()
+firstIndex("you picked the wrong house, bud")
+callChallengeBanner(6)
