@@ -66,5 +66,20 @@ let i= start
 }
 
 callChallengeBanner(4)
+
+
+
+
 firstFourChars("Oh hi, I didn't see you there. Welcome.", 4 )
-firstFourChars("Oh hi, I didn't see you there. Welcome.", 36 )
+firstFourChars("Oh hi, I didn't see you there. Welcome.", 36)
+
+
+function printsFirstIndex(str){
+    let i = 0
+    while(i<str.length){
+        if (str.length === str[0])
+        console.log(str[i])
+    }i++
+}
+
+printsFirstIndex()
