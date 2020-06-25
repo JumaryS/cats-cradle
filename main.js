@@ -51,11 +51,20 @@ everyThird("I am the alfalfa and the omelette.")
 callChallengeBanner(3)
 
 
-function firstFourChars(str){
-    let i = 0
-    while(i<str.length && i<4){
-        console.log(str[i])
-        i++ 
+function firstFourChars(str,start){
+        // we want 4 char
+let count = 0
+// st
+let i= start
+    while(i<str.length ){
+        if(count< 4){
+            console.log(str[i])
+        }
+
+        i++
     }
 }
-firstFourChars()
+
+callChallengeBanner(4)
+firstFourChars("Oh hi, I didn't see you there. Welcome.", 4 )
+firstFourChars("Oh hi, I didn't see you there. Welcome.", 36 )
