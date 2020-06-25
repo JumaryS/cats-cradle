@@ -101,3 +101,25 @@ function firstIndex(str){
 
 firstIndex("you picked the wrong house, bud")
 callChallengeBanner(6)
+
+
+
+
+function firstIndexOfU2(str){
+    let found = false
+    let i=0
+    while(i < str.length){
+        if (str[i] === "u" && found === false ){
+            console.log(i)
+            found = true
+        }
+        i=i+1
+    }
+    if(found === false){
+        console.log(-1)
+    }
+}
+
+firstIndexOfU2("you picked the wrong house, bud")
+firstIndexOfU2("I'm Canadian.")
+callChallengeBanner(6)
